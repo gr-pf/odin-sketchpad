@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+div {
+  border: 1px solid;
+  border-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  box-sizing: content-box;
+  margin-top: 1rem;
+  width: 960px;
+  height: 960px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.square-grid {
+  background-color: rgb(243, 247, 252);
+}
+
+.square-grid.red {
+  background-color: red;
+}
