@@ -1,4 +1,9 @@
+const button = document.querySelector("button");
+button.addEventListener("click", askGridSize);
+
 const wrapper = document.querySelector(".wrapper");
+
+let opacity = 0;
 
 function buildGrid(number) {
   while (wrapper.firstChild) {
@@ -11,6 +16,7 @@ function buildGrid(number) {
     squareGrid.style.width = `${widthSquare}px`;
     wrapper.appendChild(squareGrid);
   }
+  opacity = 0;
 }
 
 function colorSquare(event) {
@@ -26,6 +32,10 @@ function colorSquare(event) {
     "pink",
   );
   event.target.classList.add(randomColor);
+  if (opacity < 1) {
+    opacity += 0.01;
+  }
+  event.target.style.opacity = opacity;
 }
 
 function askGridSize() {
@@ -52,6 +62,3 @@ function modifySquare() {
 
 buildGrid(16);
 modifySquare();
-
-const button = document.querySelector("button");
-button.addEventListener("click", askGridSize);
