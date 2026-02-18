@@ -25,3 +25,21 @@ div {
 .square-grid.red {
   background-color: red;
 }
+.square-grid.blue {
+  background-color: blue;
+}
+.square-grid.green {
+  background-color: green;
+}
+.square-grid.yellow {
+  background-color: yellow;
+}
+.square-grid.orange {
+  background-color: orange;
+}
+.square-grid.purple {
+  background-color: purple;
+}
+.square-grid.pink {
+  background-color: pink;
+}

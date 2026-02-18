@@ -14,7 +14,18 @@ function buildGrid(number) {
 }
 
 function colorSquare(event) {
-  event.target.classList.add("red");
+  const colors = ["red", "blue", "green", "yellow", "orange", "purple", "pink"];
+  const randomColor = colors[Math.floor(Math.random() * 7)];
+  event.target.classList.remove(
+    "red",
+    "blue",
+    "green",
+    "yellow",
+    "orange",
+    "purple",
+    "pink",
+  );
+  event.target.classList.add(randomColor);
 }
 
 function askGridSize() {
